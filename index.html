@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English for IT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #1e293b;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      background-color: white;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+    section h2 {
+      margin-top: 0;
+      color: #1e40af;
+      cursor: pointer;
+    }
+    section p, section ul {
+      display: none;
+      margin-top: 0.5rem;
+    }
+    section.active p, section.active ul {
+      display: block;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #e2e8f0;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>English for IT</h1>
+    <p>Improve your English skills in the world of Information Technology</p>
+  </header>
+  <main>
+    <section>
+      <h2 onclick="toggleSection(this)">What Are Computers?</h2>
+      <p>Computers are electronic machines that process data. They follow instructions (called programs or software) to perform tasks. Computers help us write documents, browse the internet, send emails, play games, and much more.</p>
+    </section>
+
+    <section>
+      <h2 onclick="toggleSection(this)">How Do Computers Work?</h2>
+      <p>Computers work by taking <strong>input</strong>, processing it, and giving <strong>output</strong>. For example, when you type on a keyboard (input), the computer processes your typing and shows it on the screen (output). The processing is done by the <strong>CPU</strong> (Central Processing Unit), which acts like the brain of the computer.</p>
+    </section>
+
+    <section>
+      <h2 onclick="toggleSection(this)">What Is the Most Important Part?</h2>
+      <p>The most important part of a computer is the <strong>CPU</strong>. It controls everything the computer does. Without it, the computer cannot run any programs.</p>
+    </section>
+
+    <section>
+      <h2 onclick="toggleSection(this)">What Are the Components of a Computer?</h2>
+      <ul>
+        <li><strong>CPU (Central Processing Unit)</strong> – the brain of the computer.</li>
+        <li><strong>RAM (Random Access Memory)</strong> – temporary memory used while working.</li>
+        <li><strong>Hard Drive / SSD</strong> – stores files and programs.</li>
+        <li><strong>Monitor</strong> – displays images and text.</li>
+        <li><strong>Keyboard</strong> – used to type.</li>
+        <li><strong>Mouse</strong> – used to click and move on screen.</li>
+        <li><strong>Motherboard</strong> – connects all parts together.</li>
+        <li><strong>Power Supply</strong> – gives power to the computer.</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 English for IT. All rights reserved.
+  </footer>
+  <script>
+    function toggleSection(element) {
+      const section = element.parentElement;
+      section.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
