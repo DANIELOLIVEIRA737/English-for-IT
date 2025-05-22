@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>English for IT</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
@@ -45,12 +45,29 @@
       color: #1e40af;
       cursor: pointer;
     }
-    section p, section ul {
+    section p, section ul, section .glossary {
       display: none;
       margin-top: 0.5rem;
     }
-    section.active p, section.active ul {
+    section.active p,
+    section.active ul,
+    section.active .glossary {
       display: block;
+    }
+    .glossary-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #eee;
+    }
+    .glossary-item img {
+      width: 32px;
+      height: 32px;
+    }
+    .glossary-item span {
+      font-weight: 600;
+      color: #1e293b;
     }
     footer {
       text-align: center;
@@ -94,6 +111,92 @@
         <li><strong>Motherboard</strong> – connects all parts together.</li>
         <li><strong>Power Supply</strong> – gives power to the computer.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2 onclick="toggleSection(this)">Glossary of IT Terms</h2>
+      <div class="glossary">
+        <div class="glossary-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/2620/2620643.png" alt="CPU">
+          <div><span>CPU</span> – Central Processing Unit, the brain of the computer.</div>
+        </div>
+        <div class="glossary-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/2750/2750722.png" alt="RAM">
+          <div><span>RAM</span> – Memory used to store data temporarily while working.</div>
+        </div>
+        <div class="glossary-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/4305/4305620.png" alt="Hard Drive">
+          <div><span>Hard Drive</span> – Stores programs, files, and the operating system.</div>
+        </div>
+        <div class="glossary-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/4221/4221450.png" alt="Software">
+          <div><span>Software</span> – Programs that run on a computer.</div>
+        </div>
+        <div class="glossary-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/3460/3460253.png" alt="Hardware">
+          <div><span>Hardware</span> – Physical parts of a computer.</div>
+        </div>
+        <div class="glossary-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/702/702797.png" alt="Mouse">
+          <div><span>Mouse</span> – A pointing device used to interact with the computer.</div>
+        </div>
+        <div class="glossary-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/281/281760.png" alt="Keyboard">
+          <div><span>Keyboard</span> – Used to type text and commands.</div>
+        </div>
+        <div class="glossary-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/4072/4072484.png" alt="Monitor">
+          <div><span>Monitor</span> – The screen where you see output.</div>
+        </div>
+        <div class="glossary-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/2891/2891065.png" alt="Network">
+          <div><span>Network</span> – A group of connected computers.</div>
+        </div>
+        <div class="glossary-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/1328/1328503.png" alt="Cloud">
+          <div><span>Cloud Computing</span> – Using internet-based servers for storage and computing.</div>
+        </div>
+        <div class="glossary-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/1738/1738691.png" alt="Browser">
+          <div><span>Web Browser</span> – Software used to access websites (e.g., Chrome, Firefox).</div>
+        </div>
+        <div class="glossary-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/1320/1320641.png" alt="Email">
+          <div><span>Email</span> – A method of sending messages electronically.</div>
+        </div>
+        <div class="glossary-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/1915/1915433.png" alt="Firewall">
+          <div><span>Firewall</span> – Protects your computer/network from unauthorized access.</div>
+        </div>
+        <div class="glossary-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/2666/2666507.png" alt="Operating System">
+          <div><span>Operating System</span> – Software that manages the hardware and software (e.g., Windows, macOS).</div>
+        </div>
+        <div class="glossary-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/2991/2991104.png" alt="App">
+          <div><span>Application</span> – A program that performs a specific task.</div>
+        </div>
+        <div class="glossary-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/7394/7394203.png" alt="URL">
+          <div><span>URL</span> – The address of a web page.</div>
+        </div>
+        <div class="glossary-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/3481/3481322.png" alt="WiFi">
+          <div><span>WiFi</span> – Wireless connection to a network or internet.</div>
+        </div>
+        <div class="glossary-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/1356/1356384.png" alt="Database">
+          <div><span>Database</span> – A structured way to store and manage information.</div>
+        </div>
+        <div class="glossary-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/3523/3523063.png" alt="Server">
+          <div><span>Server</span> – A computer that provides data or services to other computers.</div>
+        </div>
+        <div class="glossary-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/3940/3940403.png" alt="Code">
+          <div><span>Code</span> – Instructions written in a programming language.</div>
+        </div>
+      </div>
     </section>
   </main>
   <footer>
